@@ -24,7 +24,7 @@ jobs:
             gcloud auth activate-service-account  --key-file=/tmp/sa_key.json
             rm -rf /tmp/sa_key.json
             gcloud config set project prodproject-139792345
-            gcloud config set compute/region us-west2
+            gcloud config set compute/region us-central
             #gcloud app services list
 
 
