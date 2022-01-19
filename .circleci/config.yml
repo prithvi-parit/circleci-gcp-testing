@@ -17,6 +17,15 @@ jobs:
           command: "echo Hello, World!"
       - run:
           command: pwd
+          
+      - run:
+          command: |
+            echo ${GCLOUD_SERVICE_KEY} > /tmp/sa_key.json
+            gcloud auth activate-service-account  --key-file=/tmp/sa_key.json
+            rm -rf /tmp/sa_key.json
+            gcloud config set project prodproject-139792345
+            gcloud config set compute/region us-west2
+            gcloud app services list
 
 
 # Invoke jobs via workflows
