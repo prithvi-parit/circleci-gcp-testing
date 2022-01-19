@@ -28,6 +28,8 @@ jobs:
             gcloud app services list
       - run:
           command:  ls
+      - run:
+          command: gcloud app deploy
 
 
 # Invoke jobs via workflows
