@@ -25,7 +25,7 @@ jobs:
             rm -rf /tmp/sa_key.json
             gcloud config set project prodproject-139792345
             gcloud config set compute/region us-west2
-            gcloud app services list
+            #gcloud app services list
 
 
 # Invoke jobs via workflows
