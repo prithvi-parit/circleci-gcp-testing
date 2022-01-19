@@ -16,7 +16,7 @@ jobs:
           name: "Say hello"
           command: "echo Hello, World!"
       - run:
-          command: ls
+          command: pwd
 
 
 # Invoke jobs via workflows
