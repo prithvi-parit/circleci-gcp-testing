@@ -20,7 +20,7 @@ jobs:
           
       - run:
           command: |
-            echo ${GCLOUD} > /tmp/sa_key.json
+            echo ${GCLOUD_FINAL} > /tmp/sa_key.json
             gcloud auth activate-service-account  --key-file=/tmp/sa_key.json
             rm -rf /tmp/sa_key.json
             gcloud config set project prodproject-139792345
